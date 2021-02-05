@@ -1,0 +1,214 @@
+@charset "UTF-8";
+body {
+  font-family: "happy_monkeyregular";
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 702px) {
+  body {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 525px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.ui-header .ui-title {
+  margin: 0 0;
+  width: 100%;
+}
+@media screen and (max-width: 430px) {
+  .ui-header .ui-title {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 360px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  article {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  article {
+    width: 90%;
+  }
+}
+article h1 {
+  background: -webkit-linear-gradient(180deg, #ff4224, #09fc00, #7212bb);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+}
+@media screen and (max-width: 768px) {
+  article h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 702px) {
+  article h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 550px) {
+  article h1 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 440px) {
+  article h1 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 350px) {
+  article h1 {
+    font-size: 18px;
+  }
+}
+article #logo-link {
+  text-align: center;
+}
+article #logo-link h4 {
+  font-family: "oswald_regularregular";
+  margin: 0;
+}
+article #logo-link h4 a:hover {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+#logo {
+  width: 20%;
+  margin: 0 70px;
+}
+
+.ui-btn:hover {
+  box-shadow: 0 0 12px #61f722;
+  -webkit-box-shadow: 0 0 12px #61f722;
+}
+
+footer a:hover {
+  font-family: "oswald";
+  text-transform: uppercase;
+}
+
+div#form-view table {
+  word-wrap: break-word;
+  color: #7212bb;
+}
+@media screen and (max-width: 975px) {
+  div#form-view table {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 720px) {
+  div#form-view table {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 460px) {
+  div#form-view table {
+    font-size: 12px;
+  }
+}
+div#form-view table tr th {
+  background-color: #7212bb;
+  color: #fff;
+  border: 2px solid #717171;
+  padding: 10px;
+}
+@media screen and (max-width: 530px) {
+  div#form-view table tr th {
+    padding: 3px;
+  }
+}
+div#form-view table tr td {
+  border: 2px solid #717171;
+  padding: 10px;
+}
+@media screen and (max-width: 530px) {
+  div#form-view table tr td {
+    padding: 3px;
+  }
+}
+div#form-view table tr:nth-of-type(even) {
+  background-color: #ababab;
+}
+div#form-view table tr:nth-of-type(even):hover {
+  box-shadow: 0px 0px 12px #09fc00;
+}
+div#form-view table tr:first-of-type:hover {
+  box-shadow: none;
+}
+div#form-view table tr:nth-of-type(2n+3) {
+  background-color: #eee;
+}
+div#form-view table tr:nth-of-type(2n+3):hover {
+  box-shadow: 0px 0px 12px #09fc00;
+}
+
+.edit-popup {
+  background-color: transparent;
+}
+.edit-popup h2 {
+  font-size: 50px;
+  /* background-color: white; */
+  color: #ff4224;
+}
+.edit-popup h1 {
+  font-size: 30px;
+  /* background-color: white; */
+}
+
+.ui-dialog {
+  background: url(../img/comic-relief-pixabay-Oberholster-Venitaa.jpg) !important;
+}
+
+#”pgEdit” {
+  color: #ff4224;
+}
+#”pgEdit” article h1 {
+  background-color: none;
+  background: none;
+  background-clip: unset;
+  -webkit-text-fill-color: unset;
+  -webkit-text-fill-color: unset;
+  color: #ff4224;
+  text-shadow: 2px 2px 4px #000;
+}
+#”pgEdit” article h2 {
+  background-color: none;
+  background: none;
+  background-clip: unset;
+  -webkit-text-fill-color: unset;
+  -webkit-text-fill-color: unset;
+  color: #ff4224;
+  text-shadow: 4px 4px 7px #000;
+}
+#”pgEdit” article label {
+  text-shadow: 2px 2px 4px #000;
+}
+#”pgEdit” article .ui-shadow-inset {
+  box-shadow: 2px 2px 8px black;
+}

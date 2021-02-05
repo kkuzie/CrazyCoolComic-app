@@ -1,0 +1,280 @@
+@import "mixins";
+
+$orange: #ff4224;
+$green: #09fc00;
+$purple: #7212bb;
+
+
+body {
+    font-family: 'happy_monkeyregular';
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    @include mq(702px){
+        font-size: 25px;
+    }
+    @include mq(525px){
+        font-size: 20px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.ui-header {//h1
+    .ui-title {
+    margin: 0 0;
+    width: 100%;
+        @include mq(430px){
+        font-size: .8em;
+        }
+    }
+}
+
+h2 {
+    @include mq(768px){
+        font-size: 35px;
+    }
+    @include mq(360px){
+        font-size: 30px;
+    }
+
+}
+article {
+    @include mq(1200px){
+    width:80%
+    }
+    @include mq(600px){
+        width: 90%;
+    }
+    h1 {
+        background: -webkit-linear-gradient(180deg,$orange, $green, $purple);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 50px;
+        @include mq(768px){
+            font-size: 40px;
+        }
+        @include mq(702px){
+            font-size: 30px;
+        }
+        @include mq(550px){
+            font-size: 25px;
+        }
+        @include mq(440px){
+            font-size: 20px;
+        }
+        @include mq(350px){
+            font-size: 18px;
+        }
+
+    }
+    #logo-link{//TKC under image
+        text-align: center;
+        h4{
+            font-family: 'oswald_regularregular';
+            margin: 0;
+            a:hover{
+                text-transform: uppercase;
+            }
+        }//#logo-link h4
+    }//#logo-link
+}//article
+img {
+    width: 100%;
+}
+#logo{//tkc logo
+    width: 20%;
+    margin: 0 70px;
+}
+
+.ui-btn{
+    &:hover{
+        box-shadow: 0 0 12px #61f722;
+        -webkit-box-shadow: 0 0 12px #61f722;
+    }
+}
+footer {
+    a:hover {
+        font-family: 'oswald';
+        text-transform: uppercase;
+    }
+}
+//VIEW section
+//TABLE
+
+div#form-view {
+table{
+    // background-color: #808080;
+    // margin: auto;
+    // width: 95%;
+    // border: 5px solid $purple;
+    // border-radius: 10px;
+    word-wrap: break-word;
+    color: $purple;
+    // padding: 3px;
+    @include mq(975px){
+        font-size: 20px;
+    }
+    @include mq(720px){
+        font-size: 16px;
+    }
+    @include mq(460px){
+        font-size: 12px;
+    }
+    tr{
+        th{
+            background-color: $purple;
+            color: #fff;
+            border: 2px solid #717171;
+            padding: 10px;
+            // border-radius: 5px;
+            @include mq(530px){
+                padding: 3px;
+            }
+        }
+        td{
+        //     // background-color: #ababab;
+            border: 2px solid #717171;
+        //     // border-radius: 5px;
+            padding: 10px;
+            @include mq(530px){
+                padding: 3px;
+            }
+        }
+        &:nth-of-type(even){//even rows of comics
+            background-color: #ababab;
+            &:hover{
+                box-shadow: 0px 0px 12px $green;
+            }    
+        }
+        &:first-of-type:hover {//first odd row
+            box-shadow: none;
+        }
+        &:nth-of-type(2n+3){//all odd rows except first
+            background-color:#eee;
+            &:hover{
+                box-shadow: 0px 0px 12px $green;
+            }    
+        }
+    }//tr
+}//table
+}//div#form-view
+
+//EDIT section
+.edit-popup {
+    background-color: transparent;   
+    h2 {
+        font-size: 50px;
+        /* background-color: white; */
+        // background: -webkit-linear-gradient(180deg,#ff4224, #09fc00, #7212bb);
+        // background-clip: text;
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        // text-shadow: none;//added so the gradient shows instead of shadow
+        color: #ff4224;
+    }
+    h1 {
+        font-size: 30px;
+        /* background-color: white; */
+        // background: -webkit-linear-gradient(180deg,#ff4224, #09fc00, #7212bb);
+        // background-clip: text;
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        // text-shadow: none;//added so the gradient shows instead of shadow
+    }
+}
+
+.ui-dialog {
+    background: url(../img/comic-relief-pixabay-Oberholster-Venitaa.jpg) !important;
+}
+
+#”pgEdit” {
+    color: #ff4224;
+    article{
+    h1{
+        //removes gradient set on global h2
+        background-color: none;
+        background: none;
+        background-clip: unset;
+        -webkit-text-fill-color: unset;
+        -webkit-text-fill-color: unset;
+        //changes font to:
+        color: #ff4224;
+        text-shadow: 2px 2px 4px #000;
+    }
+    h2{
+        //removes gradient set on global h2
+        background-color: none;
+        background: none;
+        background-clip: unset;
+        -webkit-text-fill-color: unset;
+        -webkit-text-fill-color: unset;
+        //changes font to:
+        color: #ff4224;
+        text-shadow: 4px 4px 7px #000;
+    }
+    label {//add shadow to title labels
+        text-shadow: 2px 2px 4px #000;
+
+    }
+    .ui-shadow-inset {//changing jquery  mobile shadow on input boxes
+        box-shadow: 2px 2px 8px rgb(0, 0, 0);
+    }
+    }
+}
+
+
+// input[type=text],
+// input[type=text]:focus {
+//     // color: #fff;
+//     border: none;
+//     // background: rgba(0,0,0,.2);
+//     max-width: 400px;
+// }
+// .search i {
+//     position: absolute;
+//     margin-top: -35px;
+//     margin-left: 150px;
+//     opacity: 50%;
+// }
+
+
+// #”pgView” {
+//     background: url(../img/marvel-1641554_1920-pixabay.jpg);
+// }
+
+ 
+// h2 {
+//     font-size: 50px;
+//     background: -webkit-linear-gradient(180deg,#ff4224, #09fc00, #7212bb);
+//     background-clip: text;
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//     }
+//     purporanyell.css
+//     .ui-overlay-d, .ui-page-theme-d, .ui-page-theme-d .ui-panel-wrapper {
+//     color: #ffffff;
+//     color: #ff5d00;
+//     text-shadow: 0;
+//     text-shadow: black;
+//     }
+//     styles.css
+//     .edit-popup h2 {
+//     text-shadow: none;
+//     }
+//     article h1 {
+//     background: -webkit-linear-gradient(180deg, #ff4224, #09fc00, #7212bb);
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//     }
+//     .edit-popup h1 {
+//     text-shadow: none;
+//     }
+//     jquery.mobile-1.4.5.min.css
+//     .ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
+//     text-shadow: 0 1px 0 #f3f3f3;
+//     text-shadow: 4px 4px 4px #000;
+//     }

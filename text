@@ -1,0 +1,228 @@
+
+   
+    <!-- PAGE 4 -->
+    <section data-role='page'>
+        <!--  id=”pgHome”  -->
+        <header data-role="header">
+            <h1>Kool Kuzi Comic App</h1>
+            <nav data-role="navbar" data-maxbutton="3" data-morebutton="true" data-morebuttonicon="grid">
+                <ul>
+                    <li>
+                        <a class="ui-button" data-icon="star" href="#pgWelcome">
+                            Welcome
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button" data-icon="user" href="#pgSignUp">
+                            SignUp
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button" data-icon="user" href="#pgLogin">
+                            Login
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button-active ui-button" data-icon="home" href="#pgHome">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button" data-icon="action" href="#pgSave">
+                            Save Comic
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button" data-icon="eye" href="#pgView">
+                            View
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button" data-icon="bullets" href="#pgOptions">
+                            Options
+                        </a>
+                    </li>
+                </ul>
+            </nav><!-- /navbar -->
+
+        </header>
+
+        <article role="main" class="ui-content">
+            <h2>Crazy Kuzi Cool Comic Home</h2>
+            <p>This is MY amazing app. It is crazy cool.</p>
+        </article>
+
+        <footer data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 | The Kuzi Collaborative</h4>
+        </footer>
+    </section>
+
+    <!-- PAGE 5 -->
+    <section data-role='page' data-url="pgSave" class="ui-body-b ui-body">
+        <!-- id=”pgSave”  -->
+        <header data-role="header">
+            <h1>Kool Kuzi Comic App</h1>
+            <nav data-role="navbar" data-maxbutton="3" data-morebutton="true">
+                <ul>
+                    <li>
+                        <a class="ui-button" data-icon="star" href="#pgWelcome">
+                            Welcome
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button" data-icon="edit" href="#pgSignUp">
+                            SignUp
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button" data-icon="user" href="#pgLogin">
+                            Login
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button" data-icon="home" href="#pgHome">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button-active ui-button" data-icon="action" href="#pgSave">
+                            Save Comic
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button" data-icon="eye" href="#pgView">
+                            View
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button" data-icon="bullets" href="#pgOptions">
+                            Options
+                        </a>
+                    </li>
+                </ul>
+            </nav><!-- /navbar -->
+
+        </header>
+
+        <article role="main" class="ui-content">
+            <h2>Crazy Kuzi Cool Comic - Save</h2>
+            <p>This is MY amazing app. It is crazy cool.</p>
+            <a class="ui-link ui-btn" href="#pgView">To View Screen</a>
+        </article>
+
+        <footer data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 | The Kuzi Collaborative</h4>
+        </footer>
+    </section>
+
+    <!-- PAGE 6 -->
+    <section data-role='page' data-url="pgView" id=”pgView” class="ui-body-b ui-body">
+        <header data-role="header">
+            <h1>Kool Kuzi Comic App</h1>
+            <nav data-role="navbar" data-maxbutton="3" data-morebutton="true">
+                <ul>
+                    <li>
+                        <a class="ui-button" data-icon="star" href="#pgWelcome">
+                            Welcome
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button" data-icon="user" href="#pgSignUp">
+                            SignUp
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button" data-icon="user" href="#pgLogin">
+                            Login
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button" data-icon="home" href="#pgHome">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button" data-icon="action" href="#pgSave">
+                            Save Comic
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button-active ui-button" data-icon="eye" href="#pgView">
+                            View
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button" data-icon="bullets" href="#pgOptions">
+                            Options
+                        </a>
+                    </li>
+                </ul>
+            </nav><!-- /navbar -->
+        </header>
+
+        <article role="main" class="ui-content">
+            <h2>Crazy Kuzi Cool Comic View</h2>
+            <p>This is MY amazing app. It is crazy cool.</p>
+            <!-- <a class="ui-link ui-btn" href="#pgWelcome">View</a> -->
+        </article>
+
+        <footer data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 | The Kuzi Collaborative</h4>
+        </footer>
+    </section>
+
+    <!-- PAGE 7 -->
+    <section data-role='page' data-url="pgOptions" id=”pgOptions” class="ui-body-b ui-body">
+        <header data-role="header">
+            <h1>Kool Kuzi Comic App</h1>
+            <nav data-role="navbar" data-maxbutton="3" data-morebutton="true">
+                <ul>
+                    <li>
+                        <a class="ui-button" data-icon="star" href="#pgWelcome">
+                            Welcome
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button" data-icon="user" href="#pgSignUp">
+                            SignUp
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button" data-icon="user" href="#pgLogin">
+                            Login
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button" data-icon="home" href="#pgHome">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button" data-icon="action" href="#pgSave">
+                            Save Comic
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button" data-icon="eye" href="#pgView">
+                            View
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button-active ui-button" data-icon="bullets" href="#pgOptions">
+                            Options
+                        </a>
+                    </li>
+                </ul>
+            </nav><!-- /navbar -->
+        </header>
+
+        <article role="main" class="ui-content">
+            <h2>Crazy Kuzi Cool Comic Options</h2>
+            <p>This is MY amazing app. It is crazy cool.</p>
+            <!-- <a class="ui-link ui-btn" href="#pgWelcome">To Welcome Page</a> -->
+        </article>
+
+        <footer data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 | The Kuzi Collaborative</h4>
+        </footer>
+    </section>

@@ -1,0 +1,472 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+
+<title>Crazy Cool Comics</title>
+
+<!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+
+<!-- themeroller -->
+    <link rel="stylesheet" href="themes-purporanyell/themes/purporanyell.css" />
+    <link rel="stylesheet" href="themes-purporanyell/themes/jquery.mobile.icons.min.css" />
+
+    <!-- jqm -->
+    <link rel="stylesheet" href="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="js/jquery/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- built in Monaca behind the scenes stuff -->
+    <!-- <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css"> -->
+
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <!-- <link rel="stylesheet" href="css/rocksalt/stylesheet.css"> -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--RockSalt font:  Licensed under the Apache License, Version 2.0 (the “License”);
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an “AS IS” BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License. -->
+
+
+</head>
+
+<body>
+    
+    <!-- PAGE 1 WELCOME-->
+    <section data-role='page' data-url="pgWelcome" id=”pgWelcome” data-theme="d">
+
+        <header data-role="header" class="header">
+            <h1>Crazy Cool Comics</h1>
+        </header>
+
+        <article data-role="main" class="ui-content">
+
+          <h2>Welcome to</h2>
+          <h1>Crazy Cool Comics!</h1>
+          <p>This is a comic inventory app. <br>It is crazy cool.</p>
+          <br>
+          <img src="img\toppng.com-archie-comics-593x602.png" alt="">
+
+          <h3>Be crazy...</h3>
+            <a id="signup-btn" class="ui-btn ui-btn-d ui-corner-all" data-role="button"  data-transition="turn" href="#pgSignUp">
+                Sign up
+            </a>
+
+          <h3>Be cool...</h3>
+            <a class="ui-btn ui-btn-d ui-corner-all" data-role="button"  href="#pgLogin">
+                Login
+            </a>
+        </article>
+
+        <footer data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 | <a href="https://thekuzicollaborative.com" target="blank">The Kuzi Collaborative</a></h4>
+        </footer>
+    </section>
+
+    <!-- PAGE 2 SIGNUP-->
+    <section data-role='page' data-url="pgSignUp" data-theme="d" id='pgSignUp'>
+        <header data-role="header" class="header">
+            <h1>Crazy Cool Comics</h1>
+        </header>
+
+        <article data-role="main" class="ui-content">
+            <h2>Be Crazy. </h2><h1>SignUp</h1>
+            <img src="img\archie-kiss.jpg" alt="" width="50%">
+            <div class="ui-field-contain">
+                <form id='form-signup'>
+                    <label>What is your name?</label>
+                    <input type="text" required id="form-name" name="form-name" placeholder="Archie Andrews" value="">
+
+                    <label>Choose a username</label>
+                    <input type="text" required id="form-username" name="form-username" placeholder="archarch" value="">
+
+                    <label>What is your email?</label>
+                    <input type="email" required id="form-email" data-clear-btn="true" name="form-email" value="" placeholder="archie@riverdale.com">
+
+                    <label>Create new password</label>
+                    <input type="password" required id="form-pw" data-clear-btn="true" name=
+                    "password" autocomplete="off" placeholder="i<3betty&veronica!!">
+
+                    <label>Confirm password</label>
+                    <input type="password" required id="form-pw-confirm" data-clear-btn="true" name="form-pw-confirm" autocomplete="off" placeholder="i<3betty&veronica!!">
+
+                    <!-- <input type='reset' id="signup-reset" data-icon="delete" data-iconpos="right" value='Cancel'>
+
+                    <input type="submit" id="signup-submit" data-icon="forward" data-iconpos="right" value='Go!'> -->
+
+                        <!-- <a href="#"> -->
+                            <button class="ui-shadow ui-button ui-corner-all" type="submit" id="signup-submit" data-icon="forward" data-iconpos="right">Go!</button>
+                        <!-- </a> -->
+                        <a href="#pgWelcome">
+                            <button class="ui-shadow ui-button ui-corner-all cancel-btn" type="reset" id="signup-reset" data-icon="delete" data-iconpos="right">Cancel</button>
+                        </a>
+
+                </form>
+            </div>
+        </article>
+
+        <footer data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 | <a href="https://thekuzicollaborative.com" target="blank">The Kuzi Collaborative</a></h4>
+        </footer>
+    </section>
+
+           <!-- PAGE 3 LOGIN-->
+           <section data-role='page' data-url="pgLogin" data-theme="d" id=”pgLogin” >
+            <header data-role="header" class="header">
+                <h1>Crazy Cool Comics</h1>
+            </header>
+    
+            <article data-role="main" class="ui-content">
+                <h2>Be Cool. </h2><h1>Login</h1>
+                <img src="img\archie-sodasip.jpg" alt="" width="50%">
+
+                <div class="ui-field-contain">
+                    <form id="form-login" action="">
+                        <label for="inputUsername">Enter username</label>
+                        <input type="text" required id="loginUsername" name="inputUsername"  placeholder="archarch" value="">
+        
+                        <label>Enter password</label>
+                        <input type="password" required id="loginpw" data-clear-btn="true" name=password-1 autocomplete="off" placeholder="i<3betty&veronica!!">
+    
+                            <button class="ui-shadow ui-button ui-corner-all" type="submit" id="login-submit" data-icon="forward" data-iconpos="right">Go!</button>
+
+                            <button class="ui-shadow ui-button ui-corner-all" type="reset" id="login-reset" data-icon="delete" data-iconpos="right">Reset</button>
+
+                            <a href="#pgWelcome">
+                                <button class="ui-shadow ui-button ui-corner-all cancel-btn" type="reset" id="login-cancel" data-icon="back" data-iconpos="right">Cancel</button>
+                            </a>
+
+                    </form>
+                </div>
+    
+            </article>
+    
+            <footer data-role="footer" data-position="fixed">
+                <h4>Copyright &copy; 2020 | <a href="https://thekuzicollaborative.com" target="blank">The Kuzi Collaborative</a></h4>
+            </footer>
+            </section>
+    
+            <!-- PAGE 4 HOME-->
+    <section data-role='page' data-url="pgHome" data-theme="d" id="pgHome">
+        <!--  id=”pgHome”  -->
+        <header data-role="header" class="header">
+            <h1>Crazy Cool Comics</h1>
+            <nav data-role="navbar" data-maxbutton="3" data-morebutton="true" data-morebuttonicon="grid">
+                <ul>
+                    <li>
+                        <a class="ui-button-active ui-button" data-icon="home" href="#pgHome">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button" data-icon="action" href="#pgSave">
+                            Save Comic
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button" data-icon="bars" href="#pgView">
+                            View
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button" data-icon="bullets" href="#pgOptions">
+                            Log out
+                        </a>
+                    </li>
+
+                </ul>
+            </nav><!-- /navbar -->
+
+        </header>
+
+        <article role="main" class="ui-content">
+           <h2>Home</h2>
+            <p>Ever get overwhelmed by all the comics in your collection?<br> Organizing,<br> keeping track,<br> remembering what you have? <br>Only to look in a box and realize that it is the wrong box!<br>
+                <img src="img\argh-trans.png" alt=""><br>
+                <!-- Me too! <br> -->
+                <h1>Crazy Cool Comics</h1> to the rescue!<br><br>
+                <img src="img\superhero-Ray-Shrewsberry-from-Pixabay.jpg" alt="" width="50%"><br><br>
+                In the palm of your hand you can have all your inventory to review, share, and update.
+
+            </p><br>
+            <img src="img\archie-and-the-gang.png" alt="">
+
+        </article>
+        <nav data-role="navbar" data-maxbutton="3" data-morebutton="true" data-morebuttonicon="grid">
+            <ul>
+                <li>
+                    <a class="ui-button-active ui-button" data-icon="home" href="#pgHome">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a class="ui-button" data-icon="action" href="#pgSave">
+                        Save Comic
+                    </a>
+                </li>
+                <li>
+                    <a class="ui-button" data-icon="bars" href="#pgView">
+                        View
+                    </a>
+                </li>
+                <li>
+                    <a class="ui-button-active ui-button" data-icon="bullets" href="#pgOptions">
+                        Log out
+                    </a>
+                </li>
+
+            </ul>
+        </nav><!-- /navbar -->
+
+        <footer data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 | <a href="https://thekuzicollaborative.com" target="blank">The Kuzi Collaborative</a></h4>
+        </footer>
+    </section>
+
+    <!-- PAGE 5 -- SAVE COMIC pg-->
+    <section data-role='page' data-url="pgSave" data-theme="d">
+        <!-- id=”pgSave”  -->
+        <header data-role="header" class="header">
+            <h1>Crazy Cool Comics</h1>
+            <nav data-role="navbar" data-maxbutton="3" data-morebutton="true">
+                <ul>
+                    <li>
+                        <a class="ui-button" data-icon="home" href="#pgHome">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button-active ui-button" data-icon="action" href="#pgSave">
+                            Save Comic
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button" data-icon="bars" href="#pgView">
+                            View
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button-active ui-button" data-icon="bullets" href="#pgOptions">
+                            Log out
+                        </a>
+                    </li>
+
+                </ul>
+            </nav><!-- /navbar -->
+
+        </header>
+
+        <article role="main" class="ui-content">
+            <h2>Save</h2> <h1>a crazy cool comic</h1>
+            <p>Add a comic to my collection:</p>
+
+            <div class="ui-field-contain">
+                <form id="form-save">
+                    <label>Comic Title</label>
+                    <input type="text" required name="save-name" id="save-title" placeholder="Archie and Jughead - Best Pals">
+
+                    <label>Issue number</label>
+                    <input type="text" name="save-issue" id="save-issue" placeholder="12">
+
+                    <label>Year published</label>
+                    <input type="text" name="save-year" id="save-year" placeholder="1950">
+
+                    <label>Publisher</label>
+                    <input type="text"  name=save-publisher id="save-publisher" placeholder="Archie Comics, Marvel, DC">
+
+                    <label>Condition</label>
+                    <input type="text" name="save-condition" id="save-condition" placeholder="mint, excellent, used">
+
+                    <label>Notes</label>
+                    <input type="text" name="save-notes" id="save-notes" placeholder="Specifics on condition, place stored, where bought..." value="">
+
+                    <button class="ui-shadow ui-button ui-corner-all" type="submit" id="save-submit" data-icon="check" data-iconpos="right">Save!</button>
+
+                    <button class="ui-shadow ui-button ui-corner-all" type="reset" id="save-reset" data-icon="back" data-iconpos="right">Reset</button>
+
+                </form>
+            </div>
+        </article>
+
+        <footer data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 | <a href="https://thekuzicollaborative.com" target="blank">The Kuzi Collaborative</a></h4>
+        </footer>
+    </section>
+
+    <!-- PAGE 6 VIEW-->
+    <section data-role='page' data-url="pgView" id=”pgView”  data-theme="d">
+        <header data-role="header" class="header">
+            <h1>Crazy Cool Comics</h1>
+            <nav data-role="navbar" data-maxbutton="3" data-morebutton="true">
+                <ul>
+                    <li>
+                        <a class="ui-button" data-icon="home" href="#pgHome">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button" data-icon="action" href="#pgSave">
+                            Save Comic
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button-active ui-button" data-icon="bars" href="#pgView">
+                            View
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button-active ui-button" data-icon="bullets" href="#pgOptions">
+                            Log out
+                        </a>
+                    </li>
+
+                </ul>
+            </nav><!-- /navbar -->
+        </header>
+
+        <article role="main" class="ui-content">
+            <h2>View</h2><h1> a crazy cool comic </h1>
+            <!-- <p>This is MY amazing app. It is crazy cool.</p> -->
+            <!-- <a class="ui-link ui-btn" href="#pgWelcome">View</a> -->
+            <!-- <form class="search">
+                <input type="text" class="form-control mb-2" id="search-input" name="search" placeholder="search comics">
+                <i class="fas fa-search"></i>
+            </form> -->
+
+                <div id="form-view"></div>
+                <br>
+                <p>Tap on a row to edit/delete a comic</p>
+
+                <a data-role="button" href="#" id="view-delete">Delete Collection</a>
+                <a data-role="button" href="#pgSave" id="view-add">Add a Comic</a>
+
+
+                <!-- <a href="#" id="btn-delete">       //link (href) will be set in js -->
+                    <!-- <button class="ui-shadow ui-button ui-corner-all" type="submit" id="view-delete">Delete All</button>
+                </a> -->
+    
+        </article>
+
+        <footer data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 | <a href="https://thekuzicollaborative.com" target="blank">The Kuzi Collaborative</a></h4>
+        </footer>
+    </section>
+
+    <!-- PAGE 6a EDIT view -->
+    <section data-role='page' data-url="pgEdit" id=”pgEdit”  data-theme="d">
+        <header data-role="header" class="header">
+            <h1>Crazy Cool Comics</h1>
+        </header>
+        <article role="main" class="ui-content edit-popup">
+            <h2>Edit</h2>
+            <h1>A crazy cool comic</h1>
+
+            <form id="form-edit">
+
+              <label for="editTitle">Title</label>
+               <input type="text" name="editTitle" id="edit-title">
+
+              <label for="editNumber">Number</label>
+               <input type="text" name="editNumber" id="edit-number">
+
+              <label for="editYear">Year</label>
+               <input type="text" name="editYear" id="edit-year">
+
+              <label for="editPublisher">Publisher</label>
+               <input type="text" name="editPublisher" id="edit-publisher">
+
+              <label for="editNotes">Notes</label>
+                <textarea name="editNotes" id="edit-notes"></textarea>
+
+              <input type="submit" value="Update">
+              <input type="button" value="Delete this comic" id="edit-delete-btn">
+              <input type="button" value="Nah, don't change anything" id="edit-cancel-btn">
+
+            </form>
+        </article>
+
+        <footer data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 | <a href="https://thekuzicollaborative.com" target="blank">The Kuzi Collaborative</a></h4>
+        </footer>
+
+    </section>
+
+    <!-- PAGE 7 OPTIONS -->
+    <section data-role='page' data-url="pgOptions" id=”pgOptions” data-theme="d" >
+        <header data-role="header" class="header">
+        <h1>Crazy Cool Comics</h1>
+            <nav data-role="navbar" data-maxbutton="3" data-morebutton="true">
+                <ul>
+                    <li>
+                        <a class="ui-button" data-icon="home" href="#pgHome">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button" data-icon="action" href="#pgSave">
+                            Save Comic
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button" data-icon="bars" href="#pgView">
+                            View
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ui-button-active ui-button" data-icon="bullets" href="#pgOptions">
+                            Log out
+                        </a>
+                    </li>
+
+                </ul>
+            </nav><!-- /navbar -->
+        </header>
+
+        <article role="main" class="ui-content">
+            <h2>Log out</h2> 
+            <p>
+                This is the Crazy Cool Comics inventory app.<br><br>
+                It is crazy cool...and a simple way to keep track of your comic collection.<br>
+            <br>
+            Designed and developed by<br><br>
+        <div id="logo-link">
+            <a href="https://thekuzicollaborative.com" target="blank">
+            <img src="img\tkc-cartoon-logo.svg" alt="tkc-logo" id="logo"></a> 
+            <h4><a href="https://thekuzicollaborative.com" target="blank">TheKuziCollaborative</a></h4>
+        </div>
+            <br>
+            </p>
+            <a href="#" id="btn-logout"><!-- link (href) will be set in js -->
+                <button class="ui-shadow ui-button ui-corner-all" type="submit" id="options-submit">Logout</button>
+            </a>
+        </article>
+
+        <footer data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 | <a href="https://thekuzicollaborative.com" target="blank">The Kuzi Collaborative</a></h4>
+        </footer>
+    </section>
+
+
+
+</body>
+<!-- PouchDB -->
+<script src="js/pouchdb-7.2.1.min.js"></script>
+
+<!-- my js -->
+<script src='js/main.js'></script>
+
+</html>
+

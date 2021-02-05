@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'happy_monkeyregular';
+    src: url('happymonkey-regular-webfont.woff2') format('woff2'),
+         url('happymonkey-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rock_saltregular';
+    src: url('RockSalt-webfont.eot');
+    src: url('RockSalt-webfont.eot?#iefix') format('embedded-opentype'),
+         /* url('RockSalt-webfont.woff2') format('woff2'), */
+         url('RockSalt-webfont.woff') format('woff'),
+         url('RockSalt-webfont.ttf') format('truetype'),
+         url('RockSalt-webfont.svg#rock_saltregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'oswald_regularregular';
+    src: url('oswald-regular-webfont.woff2') format('woff2'),
+         url('oswald-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1, h2, h3, h5, h6 {
+    font-family:  'rock_saltregular', sans-serif;
+}
+p{
+    margin: 0;
+}
+.ui-mobile label {
+    font-size: 30px;
+}
+a {
+    text-decoration: none;
+}
+article{
+    width: 70%;
+    margin: 0 auto;
+}
+.header {
+    background: rgb(108,56,170);
+    background: linear-gradient(90deg, rgba(108,56,170,1) 22%, rgba(6,172,0,1) 44%, rgba(255,93,0,1) 67%);
+    /* background: rgb(255,128,8);
+background: linear-gradient(90deg, rgba(255,128,8,1) 0%, rgba(121,9,9,1) 67%, rgba(255,183,0,1) 100%); */
+    /* background: rgb(255,78,8);
+background: linear-gradient(90deg, rgba(255,78,8,1) 0%, rgba(120,9,121,1) 65%, rgba(255,183,0,1) 100%); */
+/* background: rgb(255,128,8);
+background: linear-gradient(90deg, rgba(255,128,8,1) 0%, rgba(75,9,121,1) 67%, rgba(255,183,0,1) 100%); */
+}
+.ui-btn {
+    font-family: 'happy_monkeyregular';
+    font-size: 25px;
+    display: block;
+}
+.ui-footer{
+    font-size: 1rem;
+} 
+
+
+h2 {
+    font-size: 50px;
+    /* background-color: white; */
+    background: -webkit-linear-gradient(180deg,#ff4224, #09fc00, #7212bb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
